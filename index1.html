@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Service Knowledge Base</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #f5f7ff;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+    header h1::before {
+      content: '\1F512';
+      margin-right: 10px;
+    }
+    header nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+    }
+    .btn {
+      background-color: #6b4eff;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .sidebar, .main {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .sidebar {
+      width: 25%;
+    }
+    .main {
+      flex: 1;
+    }
+    input, select, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: white;
+      margin: 4px 4px 0 0;
+    }
+    .tag.shipping { background-color: #6475ff; }
+    .tag.returns { background-color: #58b56b; }
+    .tag.product { background-color: #f3af4b; }
+    .tag.account { background-color: #a86bd2; }
+    .tag.billing { background-color: #ff7171; }
+    .tag.technical { background-color: #57c2ff; }
+    .tag.warranty { background-color: #e86dd2; }
+    .case {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+    .case h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .case p {
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    .case .meta {
+      font-size: 12px;
+      color: #888;
+    }
+    .star {
+      color: gold;
+      font-size: 14px;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Customer Service Knowledge Base</h1>
+    <nav>
+      <a href="#">Intern Resources</a>
+      <a href="#" class="btn">Add New Case</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Search Knowledge Base</h3>
+      <input type="text" placeholder="Search by keyword..." />
+      <select><option>All Categories</option></select>
+      <select><option>All Time</option></select>
+      <button class="btn" style="margin-top: 10px;">Search</button>
+
+      <h4 style="margin-top: 30px;">Common Categories</h4>
+      <div>
+        <span class="tag shipping">Shipping</span>
+        <span class="tag returns">Returns</span>
+        <span class="tag product">Product Info</span>
+        <span class="tag account">Account</span>
+        <span class="tag billing">Billing</span>
+        <span class="tag technical">Technical</span>
+        <span class="tag warranty">Warranty</span>
+      </div>
+
+      <h4 style="margin-top: 30px;">Quick Stats</h4>
+      <p>Total Cases: <strong>247</strong></p>
+      <p>This Month: <strong>32</strong></p>
+      <p>Most Common: <strong>Shipping Delays</strong></p>
+    </aside>
+
+    <section class="main">
+      <h2>Customer Service Cases</h2>
+      <div class="case">
+        <h3>Missing Item in Order <span class="tag shipping">Shipping</span></h3>
+        <div class="meta">Added May 15, 2023 <span class="star">★ Frequently Used</span></div>
+        <p>Customer received incomplete order. This case covers how to handle situations where a customer reports that an item is missing from their order. Includes verification steps and resolution options.</p>
+      </div>
+
+      <div class="case">
+        <h3>Refund Process for Returned Items <span class="tag returns">Returns</span></h3>
+        <div class="meta">Added April 28, 2023 <span class="star">★ Frequently Used</span></div>
+        <p>Standard refund procedure. Detailed guide on processing refunds for returned items, including timeline expectations, verification process, and how to handle partial refunds.</p>
+      </div>
+
+      <div class="case">
+        <h3>Product Compatibility Questions <span class="tag product">Product Info</span></h3>
+        <div class="meta">Added May 10, 2023</div>
+        <p>Answering technical compatibility inquiries. How to address customer questions about product compatibility with various devices or systems. Includes resources for checking specifications.</p>
+      </div>
+
+      <div class="case">
+        <h3>Shipping Delay Explanations <span class="tag shipping">Shipping</span></h3>
+        <div class="meta">Added May 5, 2023</div>
+        <p>Handling customer inquiries about delayed orders. Guidelines for explaining shipping delays to customers, including how to check tracking information, common delay reasons, and compensation policies.</p>
+      </div>
+
+      <div class="case">
+        <h3>Account Login Troubleshooting <span class="tag account">Account</span></h3>
+        <div class="meta">Added April 20, 2023</div>
+        <p>Helping customers with login issues. Step-by-step guide for helping customers who are having trouble logging into their accounts, including password reset procedures and account recovery.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

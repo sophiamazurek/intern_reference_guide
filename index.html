@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Search Box -->
+<input id="searchInput" type="text" placeholder="Search by keyword..." />
+<button id="searchButton">Search</button>
+
+<!-- Sort Dropdown -->
+<select id="sortSelect">
+  <option value="most-recent">Most Recent</option>
+  <option value="oldest">Oldest</option>
+</select>
+
+<!-- Case Container -->
+<div id="casesContainer">
+  <!-- Sample Case -->
+  <div class="case-card" data-date="2023-05-15">
+    <h3 class="case-title">Missing Item in Order</h3>
+    <p class="case-description">Customer received incomplete order...</p>
+  </div>
+  <!-- More .case-card entries -->
+</div>
+
+<!-- Add New Case Button -->
+<button id="addCaseBtn">Add New Case</button>
+
+<!-- Modal -->
+<div id="caseModal" style="display: none;">
+  <!-- Case creation form here -->
+</div>
+
+<!-- Add this before closing body tag -->
+<script src="script.js"></script>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intern Resource Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Intern Resource Hub</h1>
+    <nav>
+      <a href="emails.html">📬 Customer Emails</a>
+      <a href="resources.html">📚 Intern Resources</a>
+    </nav>
+  </div>
+</body>
+</html>
+
+
+
